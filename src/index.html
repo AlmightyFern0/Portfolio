@@ -4,10 +4,47 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./output.css" rel="stylesheet">
+  
 </head>
-<body>
-  <h1 class="text-1xl font-bold underline">
-    Hello world!
-  </h1>
+<body class="font-main">
+  <nav class="fixed bottom-8 h-fit w-fit grid grid-cols-5 gap-2 content-center">
+
+    <button class="col-span-1 flex items-center justify-center bg-death-gray transition-all duration-300 bg-gradient-to-b from-gray-500/0 via-gray-500/0 to-gray-500/30 bg-size-200 bg-pos-0 hover:bg-pos-100 rounded-2xl py-2 px-2 aspect-square active:scale-90 active:duration-150 ease-in-out">
+      <!--<img src="/src/img/logo.png" alt="logo" height="30" width="30">-->
+      <svg id="Livello_2" data-name="Livello 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" height="30" width="30">
+        <defs>
+          <style>
+            .cls-1 {
+              fill: #fff;
+              stroke-width: 0px;
+            }
+          </style>
+        </defs>
+        <g id="Livello_1-2" data-name="Livello 1">
+          <g>
+            <rect class="cls-1" x="200" width="200" height="400"/>
+            <rect class="cls-1" x="600" width="200" height="400"/>
+            <rect class="cls-1" y="600" width="200" height="200"/>
+            <rect class="cls-1" x="200" y="800" width="600" height="200"/>
+            <rect class="cls-1" x="800" y="600" width="200" height="200"/>
+          </g>
+        </g>
+      </svg>
+    </button>
+
+    <div class="col-span-4 flex bg-death-gray rounded-2xl py-2 px-2 gap-2">
+    <!-- Animation by Mikael Ainalem link: https://codepen.io/ainalem/pen/wvKOEMV -->
+    <button class="menu flex items-center justify-center text-white rounded-lg py-2.5 px-5 w-full gap-1 transition-all duration-300 bg-gradient-to-b from-gray-500/0 via-gray-500/0 to-gray-500/30 bg-size-200 bg-pos-0 hover:bg-pos-100 active:scale-90 active:duration-150" onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))" aria-label="Main Menu">
+      Page
+      <svg width="30" height="30" viewBox="0 0 100 100">
+        <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+        <path class="line line2" d="M 20,50 H 80" />
+        <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+      </svg>
+    </button>
+
+    <button class=" flex items-center justify-center text-white rounded-lg py-2.5 px-5 w-full mr-0.5 transition-all duration-700 bg-gradient-to-br from-tech-magenta via-kinky-purple to-tech-magenta bg-size-200 bg-pos-0 hover:bg-pos-100 active:scale-90 active:duration-150">Contact</button>
+    </div>
+  </nav>
 </body>
 </html>
