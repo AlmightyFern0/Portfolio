@@ -9,14 +9,14 @@
   
 </head>
 
-<body class="font-main" onload="toggleMenu()"> <!-- No idea why it works, need help -->
-  <nav class="fixed bottom-8 h-fit w-[362px] grid grid-cols-5 gap-2 content-center">
+<body class="font-main overflow-x-hidden bg-black/90">
+  <nav class="fixed bottom-8 h-fit w-[362px] grid grid-cols-5 gap-2 content-center z-50">
 
-    <div id="menu-box" class="block col-start-2 col-span-4 bg-death-gray rounded-2xl px-2 py-2 text-white/70">
+    <div id="menu-box" class="hidden col-start-2 col-span-4 bg-death-gray rounded-2xl px-2 py-2 text-white/70">
       <ul class="flex flex-wrap gap-3">
         <li>
           <a href="">
-            <button class="rounded-lg text-left py-2.5 px-4 border-2 border-white/70 hover:text-white hover:border-white transition-all duration-300">
+            <button id="active" class="rounded-lg text-left py-2.5 px-4 border-2 border-white/70 hover:text-white hover:border-white transition-all duration-300">
               Home
             </button>
           </a>
@@ -52,7 +52,7 @@
       </ul>
     </div>
 
-    <button class="col-span-1 flex items-center justify-center bg-death-gray transition-all duration-300 bg-gradient-to-b from-gray-500/0 via-gray-500/0 to-gray-500/30 bg-size-200 bg-pos-0 hover:bg-pos-100 rounded-2xl py-2 px-2 aspect-square active:scale-90 active:duration-150 ease-in-out">
+    <button class="shadow-md col-span-1 flex items-center justify-center bg-death-gray transition-all duration-300 bg-gradient-to-b from-zinc-900/0 via-zinc-900/0 to-zinc-900/75 bg-size-200 bg-pos-0 hover:bg-pos-100 rounded-2xl py-2 px-2 aspect-square active:scale-90 active:duration-150 ease-in-out">
       <!--<img src="/src/img/logo.png" alt="logo" height="30" width="30">-->
       <svg id="Livello_2" data-name="Livello 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" height="30" width="30">
         <defs>
@@ -75,10 +75,10 @@
       </svg>
     </button>
 
-    <div class="col-span-4 flex bg-death-gray rounded-2xl py-2 px-2 gap-2">
+    <div class="shadow-md col-span-4 flex bg-death-gray rounded-2xl py-2 px-2 gap-2">
     <!-- Animation by Mikael Ainalem link: https://codepen.io/ainalem/pen/wvKOEMV -->
-    <button id="menu" class="menu flex items-center justify-center text-white rounded-lg py-2.5 px-5 w-full gap-1 transition-all duration-300 bg-gradient-to-b from-gray-500/0 via-gray-500/0 to-gray-500/30 bg-size-200 bg-pos-0 hover:bg-pos-100" onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'));toggleMenu()" aria-label="Main Menu">
-      Page
+    <button id="menu" class="menu flex items-center justify-center text-white rounded-lg py-2.5 px-5 w-full gap-1 transition-all duration-300 bg-gradient-to-b from-zinc-900/0 via-zinc-900/0 to-zinc-900/75 bg-size-200 bg-pos-0 hover:bg-pos-100" onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'));toggleMenu()" aria-label="Main Menu">
+      Home
       <svg width="30" height="30" viewBox="0 0 100 100">
         <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
         <path class="line line2" d="M 20,50 H 80" />
@@ -90,5 +90,21 @@
     </div>
   </nav>
 
+  <main class="absolute top-0 min-h-screen w-screen overflow-hidden grid grid-cols-6 p-8">
+
+    <!-- Main Title -->
+    <div class="min-h-[25vh] mt-[25vh] col-span-6 justify-center">
+      <h1 class="text-center text-8xl font-bold text-white">Ciao! I'm <span class="gradient-thingy">Lorenzo</span>.<br>I design stuff.</h1>
+    </div>
+
+    <!-- Projects Area -->
+    <div class="col-start-2 col-span-4 relative h-fit min-h-96 mt-64 grid grid-cols-3 gap-24 justify-center">
+      <div class="col-span-2 bg-death-gray rounded-3xl"></div>
+      <div class="col-span-1 bg-death-gray rounded-3xl"></div>
+    </div>
+  </main>
+
+  <footer>
+  </footer>
 </body>
 </html>

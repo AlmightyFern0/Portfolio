@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+@keyframes textShine {
+  0% {
+      background-position: 0% 50%;
+  }
+  100% {
+      background-position: 100% 50%;
+  }
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
 
 body {
@@ -50,9 +59,27 @@ body {
     stroke-dashoffset: -134;
     stroke-width: 6;
   }
-
-  .content {
-    height: 0;
-    overflow: hidden;
-    padding: 0;
+  #active {
+    border: solid 2px white;
+    background-color: white;
+    color: #1F2020;
+    opacity: 1;
   }
+  #active:hover {
+    opacity: 0.8;
+  }
+  .gradient-thingy {
+    background: linear-gradient(
+        to right,
+        #E03BE3 20%,
+        #00fcfc 40%,
+        #9345c0 60%,
+        #E03BE3 80%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+    background-size: 500% auto;
+    animation: textShine 5s ease-in-out infinite;
+}
