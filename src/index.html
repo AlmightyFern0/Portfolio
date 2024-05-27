@@ -4,12 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./output.css" rel="stylesheet">
+
+  <script src="./navbarOpCl.js" rel="preload"></script>
   
 </head>
-<body class="font-main">
+
+<body class="font-main" onload="toggleMenu()"> <!-- No idea why it works, need help -->
   <nav class="fixed bottom-8 h-fit w-[362px] grid grid-cols-5 gap-2 content-center">
 
-    <div id="showContent" class="col-start-2 col-span-4 bg-death-gray rounded-2xl px-2 py-2 text-white/70">
+    <div id="menu-box" class="block col-start-2 col-span-4 bg-death-gray rounded-2xl px-2 py-2 text-white/70">
       <ul class="flex flex-wrap gap-3">
         <li>
           <a href="">
@@ -21,26 +24,32 @@
         <li>
           <a href="">
             <button class="rounded-lg text-left py-2.5 px-4 border-2 border-white/70 hover:text-white hover:border-white transition-all duration-300">
-            About
-          </button>
-          </a></li>
-        <li>
-          <a href="">
-            <button class="rounded-lg text-left py-2.5 px-4 border-2 border-white/70 hover:text-white hover:border-white transition-all duration-300">
-            P5.js
-          </button>
+              About
+            </button>
           </a>
         </li>
         <li>
           <a href="">
             <button class="rounded-lg text-left py-2.5 px-4 border-2 border-white/70 hover:text-white hover:border-white transition-all duration-300">
-            Posters
-          </button>
+              P5.js
+            </button>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <button class="rounded-lg text-left py-2.5 px-4 border-2 border-white/70 hover:text-white hover:border-white transition-all duration-300">
+              Posters
+            </button>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <button class="rounded-lg text-left py-2.5 px-4 border-2 border-white/70 hover:text-white hover:border-white transition-all duration-300">
+              CV
+            </button>
           </a>
         </li>
       </ul>
-
-      
     </div>
 
     <button class="col-span-1 flex items-center justify-center bg-death-gray transition-all duration-300 bg-gradient-to-b from-gray-500/0 via-gray-500/0 to-gray-500/30 bg-size-200 bg-pos-0 hover:bg-pos-100 rounded-2xl py-2 px-2 aspect-square active:scale-90 active:duration-150 ease-in-out">
@@ -68,7 +77,7 @@
 
     <div class="col-span-4 flex bg-death-gray rounded-2xl py-2 px-2 gap-2">
     <!-- Animation by Mikael Ainalem link: https://codepen.io/ainalem/pen/wvKOEMV -->
-    <button class="menu flex items-center justify-center text-white rounded-lg py-2.5 px-5 w-full gap-1 transition-all duration-300 bg-gradient-to-b from-gray-500/0 via-gray-500/0 to-gray-500/30 bg-size-200 bg-pos-0 hover:bg-pos-100" onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))" aria-label="Main Menu">
+    <button id="menu" class="menu flex items-center justify-center text-white rounded-lg py-2.5 px-5 w-full gap-1 transition-all duration-300 bg-gradient-to-b from-gray-500/0 via-gray-500/0 to-gray-500/30 bg-size-200 bg-pos-0 hover:bg-pos-100" onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'));toggleMenu()" aria-label="Main Menu">
       Page
       <svg width="30" height="30" viewBox="0 0 100 100">
         <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
@@ -80,5 +89,6 @@
     <button class="flex items-center justify-center text-white rounded-lg py-2.5 px-5 w-full mr-0.5 transition-all duration-700 bg-gradient-to-br from-tech-magenta via-kinky-purple to-tech-magenta bg-size-200 bg-pos-0 hover:bg-pos-100 active:scale-90 active:duration-150">Contact</button>
     </div>
   </nav>
+
 </body>
 </html>

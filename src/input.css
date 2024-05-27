@@ -50,4 +50,9 @@ body {
     stroke-dashoffset: -134;
     stroke-width: 6;
   }
-  
+
+  .content {
+    height: 0;
+    overflow: hidden;
+    padding: 0;
+  }
