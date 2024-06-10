@@ -83,3 +83,47 @@ body {
     background-size: 500% auto;
     animation: textShine 5s ease-in-out infinite;
 }
+.gradient-link {
+  color:white;
+  background-image:linear-gradient(to left, white, white 33.33333%, #9345c0 66.66666%, #E03BE3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 300% 100%;
+  background-position: top right;
+  transition:all 0.3s ease-in-out;
+}
+.gradient-link:hover {
+  background-position: top right 100%;
+}
+.gradient-link:hover::after {
+  background-position: bottom left;
+}
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: linear-gradient(
+      to right,
+      #E03BE3 20%,
+      #9345c0 60%
+  );
+}
+.hover-underline-animation::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(
+      to right,
+      #E03BE3 20%,
+      #9345c0 60%
+  );
+  transform-origin: bottom left;
+  transition: transform 0.3s ease-out;
+}
+.hover-underline-animation:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
