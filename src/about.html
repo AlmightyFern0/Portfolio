@@ -1,0 +1,202 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+  <link href="./output.css" rel="stylesheet">
+
+  <script src="https://kit.fontawesome.com/26d31d4c4b.js" crossorigin="anonymous"></script>
+
+  <script src="./navbarOpCl.js" rel="preload"></script>
+  
+</head>
+
+<body class="font-main overflow-x-hidden bg-black/90 text-white">
+  <nav class="fixed bottom-8 content-center z-50">
+    <div class="h-fit w-[362px] grid grid-cols-5 gap-2 content-center">
+      <div id="menu-box" class="hidden col-start-2 col-span-4 bg-death-gray rounded-2xl px-2 py-2 text-white/70">
+        <ul class="flex flex-wrap gap-3">
+          <li>
+            <a href="./index.html">
+              <button class="rounded-lg text-left py-2.5 px-4 border-2 border-white/70 hover:text-white hover:border-white transition-all duration-300">
+                Home
+              </button>
+            </a>
+          </li>
+          <li>
+            <a href="./about.html">
+              <button id="active" class="rounded-lg text-left py-2.5 px-4 border-2 border-white/70 hover:text-white hover:border-white transition-all duration-300">
+                About
+              </button>
+            </a>
+          </li>
+          <li>
+            <a href="" target="_blank" rel="noopener noreferrer">
+              <button class="rounded-lg text-left py-2.5 px-4 border-2 border-white/70 hover:text-white hover:border-white transition-all duration-300">
+                P5.js
+              </button>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <button class="rounded-lg text-left py-2.5 px-4 border-2 border-white/70 hover:text-white hover:border-white transition-all duration-300">
+                Posters
+              </button>
+            </a>
+          </li>
+          <li>
+            <a href="https://docs.google.com/document/d/1BSUmyXuQ4sR2ejhRVwzA_6gzlcfMcE4pVVQSbEsBfoc/edit?usp=sharing" target="_blank" rel="noopener noreferrer">
+              <button class="rounded-lg text-left py-2.5 px-4 border-2 border-white/70 hover:text-white hover:border-white transition-all duration-300">
+                CV
+              </button>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <a href="./index.html" class="shadow-md col-span-1 flex items-center justify-center bg-death-gray transition-all duration-300 bg-gradient-to-b from-zinc-900/0 via-zinc-900/0 to-zinc-900/75 bg-size-200 bg-pos-0 hover:bg-pos-100 rounded-2xl py-2 px-2 aspect-square active:scale-90 active:duration-150 ease-in-out">
+        <!--<img src="/src/img/logo.png" alt="logo" height="30" width="30">-->
+        <svg id="Livello_2" data-name="Livello 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" height="30" width="30">
+          <defs>
+            <style>
+              .cls-1 {
+                fill: #fff;
+                stroke-width: 0px;
+              }
+            </style>
+          </defs>
+          <g id="Livello_1-2" data-name="Livello 1">
+            <g>
+              <rect class="cls-1" x="200" width="200" height="400"/>
+              <rect class="cls-1" x="600" width="200" height="400"/>
+              <rect class="cls-1" y="600" width="200" height="200"/>
+              <rect class="cls-1" x="200" y="800" width="600" height="200"/>
+              <rect class="cls-1" x="800" y="600" width="200" height="200"/>
+            </g>
+          </g>
+        </svg>
+      </a>
+
+      <div class="shadow-md col-span-4 flex bg-death-gray rounded-2xl py-2 px-2 gap-2">
+      <!-- Animation by Mikael Ainalem link: https://codepen.io/ainalem/pen/wvKOEMV -->
+      <button id="menu" class="menu flex items-center justify-center text-white rounded-lg py-2.5 px-5 w-full gap-1 transition-all duration-300 bg-gradient-to-b from-zinc-900/0 via-zinc-900/0 to-zinc-900/75 bg-size-200 bg-pos-0 hover:bg-pos-100" onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'));toggleMenu()" aria-label="Main Menu">
+        About
+        <svg width="30" height="30" viewBox="0 0 100 100">
+          <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+          <path class="line line2" d="M 20,50 H 80" />
+          <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+        </svg>
+      </button>
+
+      <button class="flex items-center justify-center text-white rounded-lg py-2.5 px-5 w-full mr-0.5 transition-all duration-700 bg-gradient-to-br from-tech-magenta via-kinky-purple to-tech-magenta bg-size-200 bg-pos-0 hover:bg-pos-100 active:scale-90 active:duration-150">Contact</button>
+      </div>
+    </div>
+  </nav>
+
+  <main class="absolute top-0 text-base md:text-xl w-screen grid grid-cols-12 p-8 leading-relaxed">
+
+    <section class="col-start-2 lg:col-start-3 col-span-10 lg:col-span-8 grid grid-cols-3 justify-center py-24">
+
+        <h1 class="text-center text-6xl lg:text-8xl font-bold col-span-3 mb-24">Nice to meet you.</h1>    
+        <img src="" alt="" class="col-span-3 lg:col-span-1">
+        <span class="col-span-3 lg:col-span-2">
+            <h2 class="text-2xl md:text-4xl font-bold leading-normal">I'm <span class="gradient-thingy">Lorenzo Marcomin</span>, a new <span class="gradient-thingy">UX Designer</span> on the block living halfway between north-western <span class="gradient-thingy">Italy</span> and eastern <span class="gradient-thingy">Canada</span>.</h2>
+            <p class="mt-6">I graduated from the Polytechnic of Turin on the 1st of March, 2024, with a degree in <span class="gradient-thingy">Communication Design</span>.</p>
+            <p class="mt-3">During my years at university, I focused on digital retail and web development. Although I’m still in the early stages of my career, I’m proud to say that I’ve already had the opportunity to work on real-life projects outside my curriculum, which have helped shape the digital identity of conventions, NGOs, and numerous institutions.</p>
+        </span>
+    </section>
+
+    <section class="col-start-1 lg:col-start-2 col-span-12 lg:col-span-10 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 justify-center p-12 rounded-3xl text-center bg-death-gray">
+        
+        <div class="m-12">
+            <h1 class="text-center text-6xl font-bold mb-6">01</h1>
+            <h2 class="text-center text-2xl font-bold mb-3">Accessible</h2>
+            <p class="text-sm text-white/75">In a digital space there are no excuses for barriers, I work with an “accessible first” methodology.</p>
+        </div>
+
+        <div class="m-12">
+            <h1 class="text-center text-6xl font-bold mb-6">02</h1>
+            <h2 class="text-center text-2xl font-bold mb-3">Inclusive</h2>
+            <p class="text-sm text-white/75 ">I strive to respect and celebrate diversity, and I try to make everyone feel valued and included within my projects.</p>
+        </div>
+
+        <div class="m-12">
+            <h1 class="text-center text-6xl font-bold mb-6">03</h1>
+            <h2 class="text-center text-2xl font-bold mb-3">Sustainable</h2>
+            <p class="text-sm text-white/75">I optimize my workflow and projects in order to generate the <a href="https://inthecloud.withgoogle.com/go-green-product/guide.html" target="_blank" rel="noopener noreferrer" class="underline hover:text-green-400 transition-all duration-300">least amount possible of CO2 <i class="fa-solid fa-arrow-up-right-from-square"></i></a> without sacrifing performance or security.</p>
+        </div>
+
+        <div class="m-12">
+            <h1 class="text-center text-6xl font-bold mb-6">04</h1>
+            <h2 class="text-center text-2xl font-bold mb-3">Impactful</h2>
+            <p class="text-sm text-white/75">I work on projects that have a meaningful positive impact on the world, such as advocating for human rights, funding medical research, and the like.</p>
+        </div>
+    </section>
+
+    <section class="col-start-2 lg:col-start-3 col-span-10 lg:col-span-8 grid grid-cols-3 justify-center py-24">
+        <span class="col-span-3 lg:col-span-2">
+            <h2 class="text-2xl md:text-4xl font-bold leading-normal">I strongly believe in leaving <span class="gradient-thingy">everything</span> in a <span class="gradient-thingy">better state</span> than when I arrived...</h2>
+            <p class="mt-6">Before doing my job, I believe there are non-negotiable moral values based on social equality. I advocate for <span class="gradient-thingy">LGBTQ+</span> rights, <span class="gradient-thingy">mental health</span>, <span class="gradient-thingy">disability</span> rights, <span class="gradient-thingy">ecology</span>, <span class="gradient-thingy">gender equality</span>, respect for <span class="gradient-thingy">native communities</span> and their protection. I'm interested in <span class="gradient-thingy">open-source</span> software and the <span class="gradient-thingy">right to repair</span>... In short, the usual intersectional feminism with a sprinkle of 'rights' in the tech field.</p>
+            <p class="mt-3">These values are deeply rooted in both the teachings I've received and my personal development. Being queer, I know what it means to feel excluded and to fight not only for my rights but to be able to live a normal everyday life. This is why I've decided that <span class="gradient-thingy">my work must contribute to improving the lives of the people it interfaces with</span>.</p>
+            <p class="mt-3">Below you can find the fundraising campaign that I'm currently supporting.</p>
+        </span>
+    </section>
+
+    <section class="col-start-1 lg:col-start-2 col-span-12 lg:col-span-10 grid grid-cols-1 md:grid-cols-3 gap-12 justify-center p-12 rounded-3xl bg-death-gray">
+      <img src="./img/AIRC_logo_interno.jpg" alt="AIRC Logo" class="rounded-3xl aspect-square object-cover col-span-1">
+      <div class="col-span-1 md:col-span-2">
+        <h2 class="mb-2">Currently sponsoring</h1>
+        <h1 class="text-4xl font-bold mb-6">AIRC Foundation</h2>
+        <p>The AIRC is a non-profit foundation that promotes fundraising for cancer research in Italy.</p>
+      </div>
+    </section>
+
+    <footer class="text-base mt-32 pb-32 col-start-1 lg:col-start-2 col-span-12 lg:col-span-10 grid grid-cols-3 gap-12 lg:gap-24">
+
+      <div class="col-span-3 lg:col-span-2">
+        <h3 class="pb-8 font-extrabold text-center md:text-left">Currently Favorite Song</h3>
+
+        <!-- Spotify -->
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/5l5LiAQ37NgoMoTMwXWsF4?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+        </div>
+
+      <div class="col-span-3 lg:col-span-1">
+        <h3 class="pb-8 font-extrabold text-center md:text-left">Useful Links</h3>
+
+        <div class="flex gap-16 justify-center md:justify-start">
+          <ul>
+            <li class="pb-2">
+              <a class="hover-underline-animation gradient-link" href="./index.html">Home</a>
+            </li>
+            <li class="pb-2">
+              <a class="hover-underline-animation gradient-link" href="./about.html">About</a>
+            </li>
+            <li class="pb-2">
+              <a class="hover-underline-animation gradient-link" href="" target="_blank" rel="noopener noreferrer">p5.js</a>
+            </li>
+            <li class="pb-2">
+              <a class="hover-underline-animation gradient-link" href="">Posters</a>
+            </li>
+            <li class="pb-2">
+              <a class="hover-underline-animation gradient-link" href="https://docs.google.com/document/d/1BSUmyXuQ4sR2ejhRVwzA_6gzlcfMcE4pVVQSbEsBfoc/edit?usp=sharing" target="_blank" rel="noopener noreferrer">CV <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </li>
+          </ul>
+
+          <ul>
+            <li class="pb-2">
+              <a class="hover-underline-animation gradient-link" href="">Colophon</a>
+            </li>
+            <li class="pb-2">
+              <a class="hover-underline-animation gradient-link" href="https://bento.me/lorenzomarcomin" target="_blank" rel="noopener noreferrer">Bento <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-span-3 text-center">&#169; 2024 <span class="gradient-thingy font-bold">Lorenzo Marcomin</span></div>
+    </footer>
+  </main>
+</body>
+</html>
