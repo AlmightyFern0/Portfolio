@@ -1,5 +1,5 @@
 /*
-! tailwindcss v3.4.3 | MIT License | https://tailwindcss.com
+! tailwindcss v3.4.10 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -574,12 +574,12 @@ video {
   position: relative;
 }
 
-.-right-20 {
-  right: -5rem;
+.-right-10 {
+  right: -2.5rem;
 }
 
-.-top-60 {
-  top: -15rem;
+.-top-\[32rem\] {
+  top: -32rem;
 }
 
 .bottom-0 {
@@ -604,66 +604,6 @@ video {
 
 .top-0 {
   top: 0px;
-}
-
-.top-60 {
-  top: 15rem;
-}
-
-.-top-\[10rem\] {
-  top: -10rem;
-}
-
-.-top-\[50rem\] {
-  top: -50rem;
-}
-
-.-top-\[20rem\] {
-  top: -20rem;
-}
-
-.-top-\[3rem\] {
-  top: -3rem;
-}
-
-.-top-\[15rem\] {
-  top: -15rem;
-}
-
-.-top-\[40rem\] {
-  top: -40rem;
-}
-
-.-top-\[30rem\] {
-  top: -30rem;
-}
-
-.-right-52 {
-  right: -13rem;
-}
-
-.-right-10 {
-  right: -2.5rem;
-}
-
-.-right-8 {
-  right: -2rem;
-}
-
-.-right-0 {
-  right: -0px;
-}
-
-.-right-5 {
-  right: -1.25rem;
-}
-
-.-top-\[35rem\] {
-  top: -35rem;
-}
-
-.-top-\[32rem\] {
-  top: -32rem;
 }
 
 .z-50 {
@@ -710,8 +650,13 @@ video {
   margin: 3rem;
 }
 
-.mb-0 {
-  margin-bottom: 0px;
+.m-0 {
+  margin: 0px;
+}
+
+.mx-3 {
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
 }
 
 .mb-0\.5 {
@@ -732,10 +677,6 @@ video {
 
 .mb-6 {
   margin-bottom: 1.5rem;
-}
-
-.mr-0 {
-  margin-right: 0px;
 }
 
 .mr-0\.5 {
@@ -798,41 +739,13 @@ video {
   height: 36rem;
 }
 
-.h-\[44rem\] {
-  height: 44rem;
+.h-\[80rem\] {
+  height: 80rem;
 }
 
 .h-fit {
   height: -moz-fit-content;
   height: fit-content;
-}
-
-.h-\[64rem\] {
-  height: 64rem;
-}
-
-.h-\[48rem\] {
-  height: 48rem;
-}
-
-.h-\[52rem\] {
-  height: 52rem;
-}
-
-.h-\[100rem\] {
-  height: 100rem;
-}
-
-.h-\[60rem\] {
-  height: 60rem;
-}
-
-.h-\[70rem\] {
-  height: 70rem;
-}
-
-.h-\[80rem\] {
-  height: 80rem;
 }
 
 .min-h-96 {
@@ -849,6 +762,11 @@ video {
 
 .w-screen {
   width: 100vw;
+}
+
+.w-max {
+  width: -moz-max-content;
+  width: max-content;
 }
 
 .rotate-12 {
@@ -1021,16 +939,6 @@ video {
      object-fit: cover;
 }
 
-.object-fill {
-  -o-object-fit: fill;
-     object-fit: fill;
-}
-
-.object-none {
-  -o-object-fit: none;
-     object-fit: none;
-}
-
 .object-scale-down {
   -o-object-fit: scale-down;
      object-fit: scale-down;
@@ -1046,6 +954,10 @@ video {
 
 .p-8 {
   padding: 2rem;
+}
+
+.p-0 {
+  padding: 0px;
 }
 
 .px-2 {
@@ -1081,6 +993,21 @@ video {
 .py-24 {
   padding-top: 6rem;
   padding-bottom: 6rem;
+}
+
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.py-3\.5 {
+  padding-top: 0.875rem;
+  padding-bottom: 0.875rem;
 }
 
 .pb-2 {
