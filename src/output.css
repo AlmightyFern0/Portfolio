@@ -650,13 +650,8 @@ video {
   margin: 3rem;
 }
 
-.m-0 {
-  margin: 0px;
-}
-
-.mx-3 {
-  margin-left: 0.75rem;
-  margin-right: 0.75rem;
+.m-2 {
+  margin: 0.5rem;
 }
 
 .mb-0\.5 {
@@ -723,6 +718,10 @@ video {
   aspect-ratio: 1 / 1;
 }
 
+.h-0 {
+  height: 0px;
+}
+
 .h-64 {
   height: 16rem;
 }
@@ -762,11 +761,6 @@ video {
 
 .w-screen {
   width: 100vw;
-}
-
-.w-max {
-  width: -moz-max-content;
-  width: max-content;
 }
 
 .rotate-12 {
@@ -883,6 +877,10 @@ video {
   background-color: rgb(31 32 32 / var(--tw-bg-opacity));
 }
 
+.bg-green-600\/50 {
+  background-color: rgb(22 163 74 / 0.5);
+}
+
 .bg-gradient-to-b {
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
 }
@@ -956,10 +954,6 @@ video {
   padding: 2rem;
 }
 
-.p-0 {
-  padding: 0px;
-}
-
 .px-2 {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
@@ -973,6 +967,11 @@ video {
 .px-5 {
   padding-left: 1.25rem;
   padding-right: 1.25rem;
+}
+
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 .py-1 {
@@ -993,16 +992,6 @@ video {
 .py-24 {
   padding-top: 6rem;
   padding-bottom: 6rem;
-}
-
-.py-3 {
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-}
-
-.px-6 {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
 }
 
 .py-3\.5 {
@@ -1148,6 +1137,18 @@ video {
 ::selection {
   color: #1F2020;
   background: #ba31bd;
+}
+
+#menu-box {
+  animation: normal;
+  transition: all;
+  animation-duration: 1000ms;
+}
+
+@media (min-width: 855px) {
+  .lm_card_width_96 {
+    width: 24rem /* 384px */;
+  }
 }
 
 body {
@@ -1306,6 +1307,11 @@ body {
 .hover\:bg-blue-600:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(37 99 235 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-green-600:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(22 163 74 / var(--tw-bg-opacity));
 }
 
 .hover\:bg-red-500:hover {

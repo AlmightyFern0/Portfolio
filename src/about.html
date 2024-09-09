@@ -15,8 +15,8 @@
 <body class="font-main overflow-x-hidden bg-black/90 text-white">
   <nav class="fixed bottom-8 content-center z-50">
     <div class="h-fit w-[362px] grid grid-cols-5 gap-2 content-center">
-      <div id="menu-box" class="hidden col-start-2 col-span-4 bg-death-gray rounded-2xl px-2 py-2 text-white/70">
-        <ul class="flex flex-wrap gap-3">
+      <div id="menu-box" class="h-0 overflow-hidden col-start-2 col-span-4 bg-death-gray rounded-2xl text-white/70">
+        <ul class="flex flex-wrap gap-3 m-2">
           <li>
             <a href="./index.html">
               <button class="rounded-lg text-left py-2.5 px-4 border-2 border-white/70 hover:text-white hover:border-white transition-all duration-300">
@@ -145,9 +145,11 @@
         </span>
     </section>
 
-    <section class="col-start-1 lg:col-start-3 col-span-12 lg:col-span-8 flex flex-wrap gap-12">
+    <section class="col-start-1 lg:col-start-2 col-span-12 lg:col-span-10 flex flex-wrap gap-6">
+
+      <!-- AIRC Foundation -->
       <a href="https://www.airc.it/" target="_blank" rel="noopener noreferrer">
-          <div class="grid grid-cols-5 gap-6 justify-center p-4 rounded-2xl md:w-96 bg-blue-600/50 hover:bg-blue-600 hover:scale-105 transition-all duration-300 cursor-pointer">
+          <div class="grid grid-cols-5 gap-6 justify-center p-4 rounded-2xl lm_card_width_96 bg-blue-600/50 hover:bg-blue-600 hover:scale-105 transition-all duration-300 cursor-pointer">
           <img src="./img/AIRC_logo_interno.jpg" alt="AIRC Logo" class="rounded-xl aspect-square object-cover col-span-2 md:col-span-2">
           <div class="col-span-3 md:col-span-3 py-1 md:py-2">
             <h3 class="mb-0.5 text-xs">Currently donating to</h3>
@@ -156,6 +158,18 @@
           </div>
         </div>
       </a>
+
+      <!-- Greenpeace -->
+      <a href="https://www.greenpeace.org" target="_blank" rel="noopener noreferrer">
+        <div class="grid grid-cols-5 gap-6 justify-center p-4 rounded-2xl lm_card_width_96 bg-green-600/50 hover:bg-green-600 hover:scale-105 transition-all duration-300 cursor-pointer">
+        <img src="./img/greenpeace_logo.jpg" alt="Greenpeace Logo" class="rounded-xl aspect-square object-cover col-span-2 md:col-span-2">
+        <div class="col-span-3 md:col-span-3 py-1 md:py-2">
+          <h3 class="mb-0.5 text-xs">Currently donating to</h3>
+          <h2 class="text-base md:text-xl font-bold mb-1">Greenpeace <i class="fa-solid fa-arrow-up-right-from-square text-sm"></i></h2>
+          <p class="text-xs md:text-sm">NGO that fights for the environment, sustainability, and climate justice globally.</p>
+        </div>
+      </div>
+    </a>
 
       <!-- Other Causes Here -->
     </section>

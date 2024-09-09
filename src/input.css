@@ -21,6 +21,17 @@
   color: #1F2020;
   background: #ba31bd;
 }
+#menu-box {
+  animation: normal;
+  transition: all;
+  animation-duration: 1000ms;
+}
+
+@media (min-width: 855px) {
+  .lm_card_width_96 {
+      width: 24rem /* 384px */;
+  }
+}
 body {
     align-items: center;
     display: flex;
